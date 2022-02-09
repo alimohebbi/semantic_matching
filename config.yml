@@ -1,0 +1,55 @@
+model_dir: "/root/Data/models/word_embedding_models/"
+src_event_dir: "events/src_events/"
+target_event_dir: "events/target_events/"
+index_path: "events/index_map.csv"
+save_score_dir: "sim_scores/"
+save_map_dir: "events/total_map.csv"
+save_rank_results_path : "results_rank.csv"
+threshold_data : "threshold_data.csv"
+threshold_results : "threshold_results.csv"
+eval_repeat: 1
+cache_size: 10
+active_techniques:
+  - wm
+  - w2v
+  - glove
+  - fast
+train_set:
+  - android
+  - blogs
+  - googleplay
+  - topics
+  - category
+  - hierarchy_topics_edit
+  - hierarchy_category_edit
+  - hierarchy_googleplay_edit
+algorithm:
+  - craftdroid
+  - custom
+  - atm_0
+
+descriptors:
+  - union
+  - intersection
+  - craftdroid
+  - atm
+
+model_path:
+  w2v_android: "MANUALS/word2vec_models/w2v-manuals.model"
+  fast_android: "MANUALS/fast_text_models/fast-manuals.model"
+  glove_android: "MANUALS/glove_models/vectors_user_manuals_glove_in_w2v_format.txt"
+  w2v_blogs: "BLOGS/word2vec_models/w2v-blogs.model"
+  fast_blogs: "BLOGS/fast_text_models/fast-blogs.model"
+  glove_blogs: "BLOGS/glove_models/vectors_blogs_glove_in_w2v_format.txt"
+  w2v_googleplay: "GOOGLE-PLAY/word2vec_models/w2v-googleplay.model"
+  fast_googleplay: "GOOGLE-PLAY/fast_text_models/fast-googleplay.model"
+  glove_googleplay: "GOOGLE-PLAY/glove_models/vectors_googleplay_glove_in_w2v_format.txt"
+  w2v_standard: "STANDARD/word2vec_models/GoogleNews-vectors-negative300.bin"
+  fast_standard: "STANDARD/fast_text_models/cc.en.300.bin"
+  glove_standard: "STANDARD/glove_models/vectors_6B_glove_w2v_format.txt"
+  random: ""
+  topics: "topics/"
+  category: "category/"
+clusters:
+  app_to_cluster: "/root/semantic_matching/embedding/app_to_cluster.csv"
+  app_info: "/root/semantic_matching/embedding/app_info.csv"
