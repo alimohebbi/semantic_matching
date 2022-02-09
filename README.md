@@ -33,6 +33,9 @@ pip install -r requirements.txt
 ```
 
 ## Run
+1. Modify `config.yml` following entry:
+ - `model_dir` : path to the word embedding models with respect to `model_path` entry
+
 1. Run semantic matching
 
 ```shell
