@@ -3,8 +3,9 @@ venv
 venv_bert
 .ipynb_checkpoints
 __pycache__
-sim_scores
+sim_scores/*.csv
 /*.csv
 analysis_results/plots-p-new/
 analysis_results/plots
 threshold_finder/threshold_data.csv
+

@@ -50,7 +50,7 @@ def get_required_models(path):
         dictionary = pickle.load(pickle_file)
     with open(path + "tfidf_model", 'rb') as pickle_file:
         tfidf = pickle.load(pickle_file)
-    topic_model = LdaMulticore.load(path + "model")
+    topic_model = LdaMulticore.load(path + "lda.model")
     return dictionary, tfidf, topic_model
 
 
