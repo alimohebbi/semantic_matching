@@ -93,7 +93,7 @@ def add_complementary():
     results = pd.read_csv(config.save_rank_results_path)
     c_results = get_complement_result()
     final_results = pd.concat([results, c_results])
-    final_results.to_csv('final.csv')
+    final_results.to_csv('final.csv', index=False)
     final_results[['MRR','training_set']].groupby('training_set').describe()['MRR'].to_csv('table_mrr.csv')
     final_results[['top1','training_set']].groupby('training_set').describe()['top1'].to_csv('table_top1.csv')
 
