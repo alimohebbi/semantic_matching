@@ -51,6 +51,6 @@ model_path:
   topics: "topics/"
   category: "category/"
 clusters:
-  app_to_cluster: "/root/semantic_matching/embedding/app_to_cluster.csv"
-  app_info: "/root/semantic_matching/embedding/app_info.csv"
+  app_to_cluster: "embedding/app_to_cluster.csv"
+  app_info: "embedding/app_info.csv"
   topic_model: "/root/Data/models/topic_modeling/"
