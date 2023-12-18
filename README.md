@@ -19,10 +19,10 @@ Each configuration is evaluated by two metrics: MRR and Top1.
  
 
 ## Screenshots
-![Corr Plot](screenshots/screenshot1.png)
+![Corr Plot](screenshots/Screenshot1.png)
 *Effectiveness of different semantic matching instances*
 
-![Corr Plot](screenshots/screenshot2.png)
+![Corr Plot](screenshots/Screenshot2.png)
 *Effectiveness of semantic matching components*
 
 
